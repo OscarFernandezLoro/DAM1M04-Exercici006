@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactivitat CSS</title>
-    <link rel="stylesheet" href="estils.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactivitat CSS</title>
+  <link rel="stylesheet" href="estils.css">
 </head>
-<body>
+<body id="pagina-interaccio">
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Formulari</a></li>
+        <li><a href="interaccio.html">Interactivitat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Interactivitat amb CSS</h1>
+
+    <!-- Pestanyes CSS -->
+    <section class="tabs">
+      <input type="radio" name="tab" id="tab1" checked>
+      <input type="radio" name="tab" id="tab2">
+      <input type="radio" name="tab" id="tab3">
+
+      <div class="tab-buttons">
+        <label for="tab1">🏠 Inici</label>
+        <label for="tab2">📊 Serveis</label>
+        <label for="tab3">📞 Contacte</label>
+      </div>
+
+      <div class="tab-content">
+        <div class="content-1">Contingut de la pestanya Inici</div>
+        <div class="content-2">Contingut de la pestanya Serveis</div>
+        <div class="content-3">Contingut de la pestanya Contacte</div>
+      </div>
+    </section>
+
+    <!-- Flip card -->
+    <section class="flip-card">
+      <input type="checkbox" id="flip" class="hidden">
+      <div class="card">
+        <div class="front">
+          <label for="flip">Clica per girar</label>
+          <p>Front de la targeta</p>
+        </div>
+        <div class="back">
+          <label for="flip">Torna enrere</label>
+          <p>Darrera de la targeta</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Exercici 006 · Formularis i Interactivitat</p>
+  </footer>
+</body>
+</html>
